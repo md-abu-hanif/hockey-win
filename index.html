@@ -59,7 +59,7 @@
         <!-- Nav Part Start -->
 
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar mb-5 bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -78,11 +78,11 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">Hockey's</a>
+                    <a class="btn btn-ghost text-4xl text-title-color font-extrabold">Hockey<span class="text-btnColor">'</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
+                    <ul class="menu menu-horizontal px-1 text-base font-normal">
+                        <li class="text-btnColor"><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
                         <li><a>Blog</a></li>
@@ -97,7 +97,7 @@
                                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </button>
-                    <button class="btn bg-btnColor text-white">Get Ticket</button>
+                    <button class="btn bg-btnColor text-white text-xl font-bold">Get Ticket</button>
                 </div>
             </div>
         </nav>
@@ -371,32 +371,33 @@
                 </div>
                 <hr>
             </article>
+
+            <!-- inut box -->
             <article class="mt-12 flex flex-col md:flex-col lg:flex-row justify-between">
-                <div class="text-center space-y-4">
-                    <div class="bg-[#BCED6D1A] rounded-lg p-4">
-                        <img src="./Images/call.png" alt="">
+                <div class="space-y-4 text-center">
+                    <div class="bg-[#BCED6D1A] space-y-1 rounded-lg p-4">
+                        <i class="fa fa-phone text-3xl text-amber-500"></i>
                         <p class="font-normal text-base text-description-color">Call</p>
                         <h4 class="font-bold text-lg text-title-color ">+880 123 456789</h4>
                     </div>
-                    <div class="bg-[#629CF31A] rounded-lg p-4">
-                        <img src="./Images/msg.png" alt="">
+                    <div class="bg-[#629CF31A] space-y-1 rounded-lg p-4">
+                        <i class="fa fa-envelope text-4xl text-btnColor"></i>
                         <p class="font-normal text-base text-description-color">Email</p>
                         <h4 class="font-bold text-lg text-title-color ">username@yeahoo.com</h4>
                     </div>
-                    <div class="bg-[#BCED6D1A] rounded-lg p-4">
-                        <img src="./Images/location.png" alt="">
+                    <div class="bg-[#BCED6D1A] space-y-1 rounded-lg p-4">
+                        <i class="fa fa-map-marker-alt text-4xl text-amber-500"></i>
                         <p class="font-normal text-base text-description-color">Location</p>
-                        <h4 class="font-bold text-lg text-title-color ">15-Norht Goran, Khilgaon, Dhaka-1219</h4>
+                        <h4 class="font-bold text-lg text-title-color ">15- Goran, Khilgaon, Dhaka-1219</h4>
                     </div>
-
                 </div>
-                <!-- Input Division -->
-                <div class="mt-10 lg:mt-0 space-y-4">
+                <!-- Input Form -->
+                <form class="mt-10 lg:mt-0 space-y-4">
                     <div class="flex text-center lg:text-left flex-col md:flex-col lg:flex-row gap-8">
                         <div class="space-y-4 lg:w-[324px]">
                             <label class="text-title-color text-xl font-bold" for="">Your Name</label>
                             <input type="text" placeholder="Enter Your Full Name"
-                                class="input w-full max-w-xs bg-input-color" />
+                                class="input w-full max-w-xs bg-input-color" required />
                         </div>
                         <div class="space-y-4 lg:w-[324px]">
                             <label class="text-title-color text-xl font-bold" for="">Your Email</label>
@@ -422,13 +423,15 @@
                             placeholder="Write your message"></textarea>
                     </div>
                     <div>
-                        <button class="btn w-full bg-btnColor text-white">Get Ticket</button>
+                        <button type="submit" class="btn w-full bg-btnColor text-white">Get Ticket</button>
                     </div>
-                </div>
+                </form>
             </article>
+
+            <!-- social Icons -->
             <article class="mt-16 text-center bg-input-color rounded-lg">
                 <div class="space-y-4 p-9 lg:w-3/4 mx-auto">
-                    <h2 class="text-title-color font-extrabold text-3xl">Get In Touch</h2>
+                    <h2 class="text-title-color font-extrabold text-2xl">Social Media</h2>
                     <div class="flex justify-center gap-9 text-2xl">
                         <a target="_blank" href=""><i class="fa fa-facebook"></i></a>
                         <a target="_blank" href=""><i class="fa fa-linkedin"></i></a>
@@ -441,6 +444,9 @@
     </main>
 
     <!-- Footer Part Start -->
+    <footer class="p-10 bg-slate-400">
+
+    </footer>
 </body>
 
 </html>
